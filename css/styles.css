@@ -1,82 +1,73 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-body {
-  background-color: rgb(211 220 218);
-}
-
-.nav ul {
+div#container-user {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  color: rgb(224, 58, 7);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100vh;
 }
 
-.item-ultimo {
-  width: 70%;
+img.photo-user {
+  width: 200px;
+  height: 200px;
 }
 
-.item {
-  padding: 15px 40px;
+img.photo-user {
+  width: 250px;
+  height: 250px;
 }
 
-.nav img {
+.content {
+  text-align: center;
+  padding: 1rem;
   width: 25%;
+}
+
+.email-user {
+  font-size: 1rem;
+}
+
+.name-user {
+  font-size: 1rem;
+}
+
+.nav-items {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
 .banner {
   width: 100%;
-  object-fit: none;
-  height: 500px;
 }
 
-.title {
-  color: rgb(224, 58, 7);
+nav.nav {
+  padding: 3rem;
+  background-color: #581e46;
+  color: white;
+}
+.content-banner {
+  background: #581e46;
+}
+
+.load{
   text-align: center;
-  padding: 30px;
-}
-
-.container-trabajo {
-  display: flex;
-  justify-content: center;
-}
-
-.item-trabajo {
-  width: 50%;
+  color: #581e46;
   padding: 2rem;
-  text-align: center;
-  font-size: 0.985rem;
-  line-height: 1.5;
 }
 
-.banner1 {
-  width: 50%;
-}
-
-
-li.logo {
-  width: 10%;
-}
-@media all and (max-width: 1024px) {
-  .logo {
-    display: none;
-  }
-  .item-ultimo {
-    width: auto;
-  }
-
-  .container-trabajo {
-    display: block;
-  }
-
-  .item-trabajo {
-    text-align: center;
+@media (max-width: 1024px) { 
+  .content {
     width: 100%;
   }
-  .banner1 {
-    width: 50%;
-}
+  div#container-user {
+ display: block;
+  }
 }
